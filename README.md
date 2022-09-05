@@ -28,23 +28,27 @@ VRChat のみならず，殆どの Easy Anti-Cheat 採用ゲームで使用可�
 2. `SplashPATH` のパスを EAC の SplashScreen.png のファイルパスに差し替えてください。
 
 ## ゲームごとのスプラッシュ画像解像度
-随時募集中です。いい感じにIssue建てるかPull Requestしてください。
+
+随時募集中です。いい感じに Issue 建てるか Pull Request してください。
 | タイトル | 解像度 | 備考 |
 | :-- | :-- | :-- |
-| A.V.A Global | 800x450 | [デフォルトではスプラッシュ画像は使用されていない為，Settings.jsonを書き換える必要があります。](#settingsjsonの書き換え)
+| A.V.A Global | 800x450 | [デフォルトではスプラッシュ画像は使用されていない為，Settings.json を書き換える必要があります。](#settingsjsonの書き換え)
 | Ironsight | 640x460 | |
 | VRChat | 800x450 | |
 
-## Settings.jsonの書き換え
-一部のゲームはスプラッシュ画像がそもそも設定されていないため，`Settings.json`を修正してスプラッシュ画像を使用するように変更する必要があります。  
+## Settings.json の書き換え
 
-| Unity製ゲーム | 多くの場合は `<GameDirectory>\EasyAntiCheat\Settings.json`
-| :-- | :-- |
-| Unreal Engine製ゲーム | 多くの場合は `<GameDirectory>\Binaries\EasyAntiCheat\Settings.json`
+一部のゲームはスプラッシュ画像がそもそも設定されていないため，`Settings.json`を修正してスプラッシュ画像を使用するように変更する必要があります。
 
-基本的には「EasyAntiCheat」のディレクトリ内に存在しています。最悪Everything等で`EasyAntiCheat\Settings.json`と検索をかけてみてもいいでしょう。
+| Unity 製ゲーム         | 多くの場合は `<GameDirectory>\EasyAntiCheat\Settings.json`          |
+| :--------------------- | :------------------------------------------------------------------ |
+| Unreal Engine 製ゲーム | 多くの場合は `<GameDirectory>\Binaries\EasyAntiCheat\Settings.json` |
+
+基本的には「EasyAntiCheat」のディレクトリ内に存在しています。最悪 Everything 等で`EasyAntiCheat\Settings.json`と検索をかけてみてもいいでしょう。
 `Settings.json`をお好きなエディタで開き，以下のメンバーを追加してください。
+
 ```json
 "requested_splash" : "EasyAntiCheat/SplashScreen.png"
 ```
-追加し，保存したら通常と同じ方法に従ってEAC Image Swapperを導入してください。
+
+追加し，保存したら通常と同じ方法に従って EAC Image Swapper を導入してください。
