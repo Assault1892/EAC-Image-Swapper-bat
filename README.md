@@ -45,7 +45,7 @@ VRChat のみならず，殆どの Easy Anti-Cheat 採用ゲームで使用可�
 | Unreal Engine 製ゲーム | 多くの場合は `<GameDirectory>\Binaries\EasyAntiCheat\Settings.json` |
 
 基本的には「EasyAntiCheat」のディレクトリ内に存在しています。最悪 Everything 等で`EasyAntiCheat\Settings.json`と検索をかけてみてもいいでしょう。
-`Settings.json`をお好きなエディタで開き，以下のメンバーを追加してください。
+`Settings.json`をお好きなエディタで開き，以下のキーを追加してください。
 
 ```json
 "requested_splash" : "EasyAntiCheat/SplashScreen.png"
