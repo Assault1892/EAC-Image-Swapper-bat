@@ -17,10 +17,10 @@ VRChat のみならず，殆どの Easy Anti-Cheat 採用ゲームで使用可�
 ## ゲームへの導入 (例: VRChat)
 
 1. `run.bat` を VRChat のルートディレクトリ (VRChat.exe と同じディレクトリ) に配置してください。
-2. `randomizer.bat` を差し替えたいスプラッシュ画像が含まれているディレクトリの一個上に配置してください。
+2. `randomizer.bat` を差し替えたいスプラッシュ画像が含まれているディレクトリの **一個上に** 配置してください。
 3. `randomizer.bat` のショートカット (`randomizer.bat.lnk`) を VRChat のルートディレクトリに配置してください。
 4. VRChat の起動引数の頭に `run.bat %COMMAND%` を入力してください。
-5. Done. 以下のガイドに従って `randomizer.bat` 内のパスを差し替えてください。
+5. 完了です。以下のガイドに従って `randomizer.bat` 内のパスを差し替えてください。
 
 ### パスの変更
 
